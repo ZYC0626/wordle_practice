@@ -108,9 +108,9 @@ const renderKeyboard = (id, ans) => {
 keyBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
     if(!lock) {
-      if (btn.innerText === 'backspace') {
+      if (btn.innerText.toLowerCase() === 'backspace') {
         currentInput.pop();
-      } else if (btn.innerText === 'check') {
+      } else if (btn.innerText.toLowerCase() === 'check') {
         checkRow(currentInput);
       } else {
         if (currentInput.length < 5)
