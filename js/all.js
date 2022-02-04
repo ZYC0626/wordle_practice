@@ -41,7 +41,6 @@ darkModeToggle.addEventListener('change', (e) => {
   }
 })
 
-const keyBtns = document.querySelectorAll('.keybtn');
 let currentInput = [];
 
 const renderTiles = (arr) => {
@@ -105,12 +104,14 @@ const renderKeyboard = (id, ans) => {
   target.classList.contains(ans) ? null : target.classList.add(ans);
 }
 
+const keyBtns = document.querySelectorAll('.keybtn');
 keyBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
+    // console.log(btn.id);
     if(!lock) {
-      if (btn.innerText.toLowerCase() === 'backspace') {
+      if (btn.id === 'back') {
         currentInput.pop();
-      } else if (btn.innerText.toLowerCase() === 'check') {
+      } else if (btn.id === 'confirm') {
         checkRow(currentInput);
       } else {
         if (currentInput.length < 5)
