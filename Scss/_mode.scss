@@ -1,0 +1,40 @@
+:root {
+  --clr-primary: #003f88;
+  --clr-secondary: #00296b;
+  --bg: #fffcee;
+  --bg-contract: #14213d;
+  --bg-toggle: #14213d;
+  --black: #3a3a3c;
+  --orange: #f5793a;
+  --blue: #85c0f9;
+}
+
+// 直接偵測瀏覽器設定
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --clr-primary: #ffd500;
+//     --clr-secondary: #fdc500;
+//     --bg: #14213d;
+//     --bg-toggle: black;
+//   }
+// }
+
+h1 {
+  color: var(--clr-primary);
+}
+
+a {
+  color: var(--clr-primary);
+}
+
+body {
+  background: var(--bg);
+
+  &.darkMode {
+    --clr-primary: #fffcee;
+    --clr-secondary: #fdc500;
+    --bg: #14213d;
+    --bg-contract: #fffcee;
+    --bg-toggle: black;
+  }
+}
