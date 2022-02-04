@@ -359,6 +359,8 @@ input:checked + .slider:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
 }
 
 .keybtn {

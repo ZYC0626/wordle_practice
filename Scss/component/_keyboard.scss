@@ -5,6 +5,8 @@
     display: flex;
     margin-bottom: 8px;
     justify-content: center;
+    // 好像可以防縮放
+    touch-action: manipulation;
   }
 }
 
