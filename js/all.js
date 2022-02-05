@@ -96,6 +96,10 @@ const checkTiles = (arr) => {
         } else {
           lock = false;
         }
+        if (document.querySelectorAll('.space-row').length === 0) {
+          // console.log('done');
+          showSnackbar(answer,'wrong');
+        }
       }
     }, i * 600)
   }
