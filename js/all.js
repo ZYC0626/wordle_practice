@@ -14,10 +14,10 @@ let darkModeToggle = document.getElementById('dark-mode-toggle');
 let state = '';
 let lock = false;
 
-// document.querySelector('.refresh a').addEventListener('click', (e) => {
-//   e.preventDefault();
-//   location.reload();
-// });
+document.querySelector('.refresh a').addEventListener('click', (e) => {
+  e.preventDefault();
+  location.reload();
+});
 
 const enableDarkMode = () => {
   document.body.classList.add('darkMode');
