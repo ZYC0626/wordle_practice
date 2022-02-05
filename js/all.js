@@ -101,7 +101,7 @@ const checkTiles = (arr) => {
           showSnackbar(answer,'wrong');
         }
       }
-    }, i * 600)
+    }, i * 500)
   }
 }
 const renderKeyboard = (id, ans) => {

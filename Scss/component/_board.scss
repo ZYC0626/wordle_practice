@@ -47,7 +47,7 @@
     background: var(--black);
   }
   &.flip {
-    animation: FlipIn 500ms ease-in, FlipOut 500ms ease-in;
+    animation: FlipIn 250ms ease-in, FlipOut 250ms ease-in;
   }
 }
 

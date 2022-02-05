@@ -298,8 +298,8 @@ input:checked + .slider:before {
 }
 
 .tile.flip {
-  -webkit-animation: FlipIn 500ms ease-in, FlipOut 500ms ease-in;
-          animation: FlipIn 500ms ease-in, FlipOut 500ms ease-in;
+  -webkit-animation: FlipIn 250ms ease-in, FlipOut 250ms ease-in;
+          animation: FlipIn 250ms ease-in, FlipOut 250ms ease-in;
 }
 
 @-webkit-keyframes FlipIn {
