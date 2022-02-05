@@ -6,6 +6,7 @@ fetch("./json/quiz.json")
   .then(json => {
     answer = json[Math.floor(Math.random()*json.length)];
     answerArr = answer.toUpperCase().split('');
+    console.log(answer);
   });
 
 let darkMode = localStorage.getItem('darkMode');
